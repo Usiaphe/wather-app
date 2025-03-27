@@ -76,20 +76,20 @@ body {
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2), 
                 inset -2px -2px 5px rgba(255, 255, 255, 0.3);
 }
-
 .search-bar img {
-    width: 24px;
-    padding: 8px;
+    width: 29px; /* Bigger icon */
+    height: 29px;
+    padding: 9px; /* More balanced spacing */
     border-radius: 50%;
-    background: #eee;
+    background: rgba(255, 255, 255, 0.9);
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.2s ease-in-out, background 0.3s;
 }
 
 .search-bar img:hover {
-    background: #ddd;
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1); /* Slight pop-out effect */
 }
-
 /* Weather Icon */
 .weather-icon {
     width: 120px;
